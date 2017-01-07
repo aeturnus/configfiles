@@ -17,5 +17,8 @@ prompt elite2 cyan
 
 alias ls='ls --color=auto'
 
-# syntax highlighting
+# Paths
+#export PATH="/path/to/thing:$PATH"
+
+# Syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
