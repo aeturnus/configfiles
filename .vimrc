@@ -9,6 +9,8 @@ set autoindent
 set clipboard=unnamedplus
 "show status line w/ file number
 set ls=2
+"show marker at column 81
+autocmd FileType c,cpp,h set colorcolumn=81
 
 "[REDACTED] coding standards say all indentation must be done as four space characters
 set tabstop=4
