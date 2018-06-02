@@ -10,7 +10,7 @@ if [ $# -ge 1 ]; then
 fi
 
 # set pwd to script directory
-cd $(dirname $(readlink -f $0))
+cd $(dirname $(readlink -f $0))/files
 
 # install cscope plugin
 mkdir -p $home/.vim
