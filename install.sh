@@ -4,7 +4,7 @@
 
 # setup install directory
 home=$HOME
-cp='cp -b'    # backup existing files
+cp='cp -i'    # backup existing files
 if [ $# -ge 1 ]; then
     home=$1
 fi
@@ -21,6 +21,12 @@ $cp cscope_maps.vim ~/.vim/plugin
 $cp .zshrc $home/
 $cp .vimrc $home/
 $cp .tmux.conf $home/
+$cp .Xresources $home/
+
+# i3
+mkdir -p $home/.config
+mkdir -p $home/.config/i3
+$cp i3config $home/.config/i3/config
 
 # setup .git config
 $cp global_gitignore $home/global_gitignore

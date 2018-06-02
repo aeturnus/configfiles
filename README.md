@@ -10,3 +10,5 @@ No real dependencies, but it has configuration files for various programs and ap
 * vim
 * tmux
 * git
+* i3
+* rxvt-unicode (urxvt)

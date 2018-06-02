@@ -1,0 +1,12 @@
+XTerm.vt100.reverseVideo: true
+
+URxvt.foreground: white
+URxvt.background: black
+URxvt.scrollBar: false
+URxvt.font: xft:hack:size=9
+!URxvt.font: xft:dejavusansmono:size=9
+
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard
+
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
