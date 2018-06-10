@@ -26,7 +26,9 @@ $cp .Xresources $home/
 # i3
 mkdir -p $home/.config
 mkdir -p $home/.config/i3
+mkdir -p $home/.config/i3status
 $cp i3config $home/.config/i3/config
+$cp i3statusconfig $home/.config/i3status/config
 
 # setup .git config
 $cp global_gitignore $home/global_gitignore
