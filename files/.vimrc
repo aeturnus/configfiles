@@ -19,6 +19,8 @@ set shiftwidth=4
 set expandtab
 "but makefiles need tab
 autocmd FileType mk,make set noexpandtab
-"Mobile group coding standards say that trailing whitespace is verbotten. Flag it and clean it automagically on exit.
-autocmd FileType c,cpp,h,java autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
-au BufRead *.c,*.cpp,*.h,*.java,*.mk match Error /\s\+$/
+
+"Delete trailing whitespace
+autocmd FileType c,cpp,h,java,verilog,systemverilog autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+"Flag trailing whitespace
+au BufRead *.c,*.cpp,*.h,*.java,*.mk,*.v,*.sv match Error /\s\+$/
