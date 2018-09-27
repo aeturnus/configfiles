@@ -196,3 +196,4 @@ bar {
 }
 
 exec feh --bg-scale /home/brandonn/Pictures/Wallpapers/Arch/xorg-black-1080.png
+exec --no-startup-id nm-applet
