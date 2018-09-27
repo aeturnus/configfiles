@@ -16,6 +16,7 @@ promptinit
 prompt elite2 cyan
 
 alias ls='ls --color=auto'
+alias reload='source $HOME/.zshrc'
 
 # Paths
 #export PATH="/path/to/thing:$PATH"
