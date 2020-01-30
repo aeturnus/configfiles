@@ -35,3 +35,6 @@ $cp global_gitignore $home/global_gitignore
 git config --global core.excludesfile $HOME/global_gitignore
 #git config --global user.name '<full name here>'
 #git config --global user.email '<email here>'
+
+# nethack
+$cp .nethackrc $home/
